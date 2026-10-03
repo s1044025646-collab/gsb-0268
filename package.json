@@ -1,0 +1,21 @@
+{
+  "name": "jpeg-exif-inspector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地 JPEG EXIF 标签解析与偏移诊断后端（只读，子集实现）",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/scripts/demo.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
